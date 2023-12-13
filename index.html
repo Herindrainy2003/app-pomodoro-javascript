@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro App</title>
+</head>
+<body>
+    
+    <div class="contenu">
+        <div class="time">
+           
+            <div class="travail">
+              <h3> Travail</h3>   <div id="travail"> <br>30 : 00</div>
+            </div>
+            <div class="repos">
+               <h3>Repos</h3>  <div id="repos">  <br> 05 : 00 </div>          
+            </div>
+        </div>
+            <div class="options">
+                <button id="start_btn">Start  </button> 
+                <button id="pause_btn">l  l</button>
+                <button id="restart_btn">Restart</button>
+            </div>
+        </div>
+       
+ <audio src="sound/wrong.mp3" id="song"></audio>
+    <style>
+        body{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4d4747;
+        }
+        
+        .contenu{
+            background-color: rgb(250, 246, 246);
+            padding: 40px;
+            border-radius: 89px;
+            
+           
+        }
+
+        .time{
+            display: flex;
+        justify-content: space-around;
+         margin-bottom: 40px;
+         color: aliceblue;
+        
+        }
+        .travail{
+            background-color:rgb(0, 0, 0) ;
+            border-radius: 10px;
+            text-align: center;
+            width: 130px;
+            padding: 19px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .repos{
+            background-color:rgb(0, 0, 0) ;
+            border-radius: 10px;
+            text-align: center;
+            width: 130px;
+           margin-left: 19px;
+            padding: 19px;
+        }
+        .options {
+            display: flex;
+           
+            justify-content: center;   
+                  
+}
+
+        #start_btn ,#pause_btn , #restart_btn{
+          font-size: 19px;
+            color: rgb(242, 234, 234);
+            border: none;
+            cursor: pointer;
+          margin: 5px;
+          background-color:rgb(3, 36, 40) ;
+          border-radius: 92px;
+          transition: background-color 0.3s;
+        }
+        
+        #button:hover{
+            background-color: aqua;
+        }
+        
+
+        
+    </style>
+    <script src="index.js"></script>
+</body>
+</html>
